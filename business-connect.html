@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Connect | Sutton Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" id="nav-logo">
+                    <!-- Logo Icon -->
+                    <div class="w-10 h-10 flex items-center justify-center -ml-1">
+                        <img src="logo.png" alt="Sutton Tech Logo"
+                            class="w-full h-full object-contain mix-blend-multiply" />
+                    </div>
+                    <span
+                        class="font-bold text-xl tracking-tight text-slate-800 hover:text-blue-600 transition-colors">Business
+                        Connect</span>
+                </div>
+                <div class="hidden md:flex space-x-8" id="nav-links">
+                    <a href="index.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Sutton
+                        Tech</a>
+                    <a href="#features" class="text-slate-600 hover:text-blue-600 font-medium transition-colors"
+                        onclick="showHome()">Features</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 font-medium transition-colors"
+                        onclick="showHome()">Pricing</a>
+                    <a href="dgx-spark.html"
+                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">DGX Spark</a>
+                </div>
+                <div>
+                    <a href="#contact"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm shadow-blue-200">
+                        Request Access
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN LANDING PAGE VIEW -->
+    <div id="view-home" class="block">
+        <!-- Hero Section -->
+        <section class="relative pt-20 pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-6 border border-blue-100">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                        </span>
+                        100% Cloud-Hosted SaaS
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight">
+                        The Complete PSA Built for <br class="hidden md:block" />
+                        <span class="bg-gradient-to-r from-blue-600 to-indigo-600 gradient-text">Modern MSPs</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                        Stop fighting with fragmented tools. Business Connect unifies your dispatch calendar, ticketing,
+                        billing, and procurement into one seamless, zero-maintenance platform.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#pricing"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-blue-200 text-lg">
+                            View Pricing
+                        </a>
+                        <a href="#features"
+                            class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold transition-all shadow-sm text-lg">
+                            Explore Features
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dashboard Mockup -->
+                <div class="mt-20 mx-auto max-w-6xl">
+                    <div
+                        class="rounded-2xl border border-slate-200/60 bg-white shadow-2xl overflow-hidden ring-1 ring-slate-900/5">
+                        <!-- Browser Chrome -->
+                        <div class="bg-slate-100 border-b border-slate-200 px-4 py-3 flex items-center gap-2">
+                            <div class="w-3 h-3 rounded-full bg-rose-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+                            <div
+                                class="ml-4 text-xs text-slate-500 font-medium font-mono bg-white px-3 py-1 rounded border border-slate-200 shadow-sm">
+                                app.suttontech.com/connect</div>
+                        </div>
+                        <!-- App UI Mock -->
+                        <div class="flex h-[400px] md:h-[600px] bg-white">
+                            <!-- Sidebar -->
+                            <div class="w-64 bg-slate-50 border-r border-slate-200 p-4 hidden md:block select-none">
+                                <div class="font-bold text-sm text-slate-400 uppercase tracking-wider mb-4 mt-2">
+                                    Business Core</div>
+                                <div class="space-y-1 mb-6 text-sm">
+                                    <div class="sidebar-nav-item px-3 py-2 border border-transparent text-slate-600 hover:bg-blue-50 hover:text-blue-700 rounded-md cursor-pointer flex items-center gap-2 font-medium transition-colors"
+                                        data-target="Clients">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                            </path>
+                                        </svg>Clients
+                                    </div>
+                                    <div class="sidebar-nav-item px-3 py-2 border border-transparent text-slate-600 hover:bg-blue-50 hover:text-blue-700 rounded-md cursor-pointer flex items-center gap-2 font-medium transition-colors"
+                                        data-target="Tickets">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z">
+                                            </path>
+                                        </svg>Tickets
+                                    </div>
+                                </div>
+
+                                <div class="font-bold text-sm text-slate-400 uppercase tracking-wider mb-4">Time &
+                                    Billing</div>
+                                <div class="space-y-1 mb-6 text-sm">
+                                    <div class="sidebar-nav-item px-3 py-2 bg-blue-100 text-blue-700 border border-blue-200 rounded-md cursor-pointer flex items-center gap-2 font-medium transition-colors"
+                                        data-target="Dispatch Calendar">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>Dispatch Calendar
+                                    </div>
+                                    <div class="sidebar-nav-item px-3 py-2 border border-transparent text-slate-600 hover:bg-blue-50 hover:text-blue-700 rounded-md cursor-pointer flex items-center gap-2 font-medium transition-colors"
+                                        data-target="Invoices">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                            </path>
+                                        </svg>Invoices
+                                    </div>
+                                </div>
+
+                                <div class="font-bold text-sm text-slate-400 uppercase tracking-wider mb-4">Procurement
+                                </div>
+                                <div class="space-y-1 text-sm">
+                                    <div class="sidebar-nav-item px-3 py-2 border border-transparent text-slate-600 hover:bg-blue-50 hover:text-blue-700 rounded-md cursor-pointer flex items-center gap-2 font-medium transition-colors"
+                                        data-target="Products & Assets">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4">
+                                            </path>
+                                        </svg>Products & Assets
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Main Content Area -->
+                            <div class="flex-1 p-6 md:p-10 bg-white relative overflow-hidden">
+                                <h2 id="dashboard-title"
+                                    class="text-2xl font-bold text-slate-800 mb-6 transition-all duration-300">Dispatch
+                                    & Time Calendar</h2>
+
+                                <!-- Calendar Grid Mockup -->
+                                <div id="content-calendar"
+                                    class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm flex flex-col h-[85%] transition-opacity duration-300">
+                                    <!-- Header -->
+                                    <div
+                                        class="grid grid-cols-5 border-b border-slate-200 bg-slate-50 text-sm font-semibold text-slate-600">
+                                        <div class="p-3 text-center border-r border-slate-200">Mon</div>
+                                        <div class="p-3 text-center border-r border-slate-200">Tue</div>
+                                        <div class="p-3 text-center border-r border-slate-200">Wed</div>
+                                        <div class="p-3 text-center border-r border-slate-200">Thu</div>
+                                        <div class="p-3 text-center">Fri</div>
+                                    </div>
+                                    <!-- Body -->
+                                    <div class="flex-1 grid grid-cols-5 grid-rows-2">
+                                        <div class="border-r border-b border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right mb-2">12</div>
+                                            <div
+                                                class="bg-emerald-50 border border-emerald-200 rounded p-1.5 mb-1 text-[10px] leading-tight text-emerald-800">
+                                                <span class="font-bold">5.500h - Cody</span><br />Christy's Camera
+                                                System
+                                            </div>
+                                        </div>
+                                        <div class="border-r border-b border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right mb-2">13</div>
+                                            <div
+                                                class="bg-blue-50 border border-blue-200 rounded p-1.5 mb-1 text-[10px] leading-tight text-blue-800">
+                                                <span class="font-bold">2.000h - Chris</span><br />Cable run quote
+                                            </div>
+                                        </div>
+                                        <div class="border-r border-b border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right mb-2">14</div>
+                                        </div>
+                                        <div class="border-r border-b border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right mb-2">15</div>
+                                            <div
+                                                class="bg-purple-50 border border-purple-200 rounded p-1.5 mb-1 text-[10px] leading-tight text-purple-800">
+                                                <span class="font-bold">7.000h - Reid</span><br />City Campground
+                                            </div>
+                                        </div>
+                                        <div class="border-b border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right mb-2">16</div>
+                                        </div>
+                                        <!-- Row 2 -->
+                                        <div class="border-r border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right">19</div>
+                                        </div>
+                                        <div class="border-r border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right">20</div>
+                                        </div>
+                                        <div class="border-r border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right">21</div>
+                                        </div>
+                                        <div class="border-r border-slate-200 p-2">
+                                            <div class="text-xs text-slate-400 text-right">22</div>
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="text-xs text-slate-400 text-right">23</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Clients Mockup (Hidden by default) -->
+                                <div id="content-clients"
+                                    class="hidden flex-col h-[85%] border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden transition-opacity duration-300">
+                                    <div
+                                        class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex justify-between items-center">
+                                        <span class="font-semibold text-slate-700 text-sm">Active Clients</span>
+                                        <button
+                                            class="bg-blue-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-blue-700 transition-colors">Add
+                                            Client</button>
+                                    </div>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm text-left">
+                                            <thead class="text-xs text-slate-500 bg-slate-50 border-b border-slate-200">
+                                                <tr>
+                                                    <th class="px-4 py-3">Client Name</th>
+                                                    <th class="px-4 py-3">Sector</th>
+                                                    <th class="px-4 py-3">Status</th>
+                                                    <th class="px-4 py-3">MRR</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-slate-100">
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Schoolcraft County
+                                                        Sheriff's Office</td>
+                                                    <td class="px-4 py-3 text-slate-500">Government</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-md text-[10px] font-bold uppercase tracking-wider">Active</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$850.00</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Zellar Sanitation
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Industrial</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-md text-[10px] font-bold uppercase tracking-wider">Active</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$500.00</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Yooper Fitness</td>
+                                                    <td class="px-4 py-3 text-slate-500">Commercial</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-md text-[10px] font-bold uppercase tracking-wider">Active</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$250.00</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Newton Township
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Government</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-md text-[10px] font-bold uppercase tracking-wider">Active</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$150.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Tickets Mockup (Hidden by default) -->
+                                <div id="content-tickets"
+                                    class="hidden flex-col h-[85%] border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden transition-opacity duration-300">
+                                    <div
+                                        class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex justify-between items-center">
+                                        <span class="font-semibold text-slate-700 text-sm">Open Service Board</span>
+                                        <button
+                                            class="bg-blue-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-blue-700 transition-colors">New
+                                            Ticket</button>
+                                    </div>
+                                    <div class="p-4 space-y-3 overflow-y-auto bg-slate-50/50">
+                                        <!-- Ticket 1 -->
+                                        <div
+                                            class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex justify-between items-center hover:border-blue-300 transition-colors cursor-pointer">
+                                            <div>
+                                                <div class="flex items-center gap-2 mb-1">
+                                                    <span class="text-xs font-mono text-slate-400">#TK-2041</span>
+                                                    <span
+                                                        class="px-2 py-0.5 bg-rose-100 text-rose-700 rounded text-[10px] font-bold uppercase tracking-wider">High
+                                                        Priority</span>
+                                                </div>
+                                                <h4 class="font-bold text-slate-800 text-sm">Camera System Offline -
+                                                    Main Bar</h4>
+                                                <p class="text-xs text-slate-500 mt-1">Christy's Bar • Opened 2 hours
+                                                    ago</p>
+                                            </div>
+                                            <div class="text-right">
+                                                <div class="text-xs text-slate-500 mb-1">Assigned to:</div>
+                                                <div class="flex items-center gap-1.5 justify-end">
+                                                    <div
+                                                        class="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center text-white text-[10px] font-bold">
+                                                        C</div>
+                                                    <span class="text-sm font-medium text-slate-700">Cody P.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Ticket 2 -->
+                                        <div
+                                            class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex justify-between items-center hover:border-blue-300 transition-colors cursor-pointer">
+                                            <div>
+                                                <div class="flex items-center gap-2 mb-1">
+                                                    <span class="text-xs font-mono text-slate-400">#TK-2040</span>
+                                                    <span
+                                                        class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-[10px] font-bold uppercase tracking-wider">Normal</span>
+                                                </div>
+                                                <h4 class="font-bold text-slate-800 text-sm">Quickbooks Database
+                                                    Connectivity Issue</h4>
+                                                <p class="text-xs text-slate-500 mt-1">Zellar Sanitation • Opened
+                                                    yesterday</p>
+                                            </div>
+                                            <div class="text-right">
+                                                <div class="text-xs text-slate-500 mb-1">Assigned to:</div>
+                                                <div class="flex items-center gap-1.5 justify-end">
+                                                    <div
+                                                        class="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center text-white text-[10px] font-bold">
+                                                        R</div>
+                                                    <span class="text-sm font-medium text-slate-700">Reid S.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Ticket 3 -->
+                                        <div
+                                            class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex justify-between items-center hover:border-blue-300 transition-colors cursor-pointer">
+                                            <div>
+                                                <div class="flex items-center gap-2 mb-1">
+                                                    <span class="text-xs font-mono text-slate-400">#TK-2038</span>
+                                                    <span
+                                                        class="px-2 py-0.5 bg-blue-100 text-blue-700 rounded text-[10px] font-bold uppercase tracking-wider">Normal</span>
+                                                </div>
+                                                <h4 class="font-bold text-slate-800 text-sm">Ballot Box Camera Network
+                                                    Drop</h4>
+                                                <p class="text-xs text-slate-500 mt-1">Newton Township • Opened 2 days
+                                                    ago</p>
+                                            </div>
+                                            <div class="text-right">
+                                                <div class="text-xs text-slate-500 mb-1">Assigned to:</div>
+                                                <div class="flex items-center gap-1.5 justify-end">
+                                                    <div
+                                                        class="w-5 h-5 rounded-full bg-purple-500 flex items-center justify-center text-white text-[10px] font-bold">
+                                                        C</div>
+                                                    <span class="text-sm font-medium text-slate-700">Chris S.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Invoices Mockup (Hidden by default) -->
+                                <div id="content-invoices"
+                                    class="hidden flex-col h-[85%] border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden transition-opacity duration-300">
+                                    <div
+                                        class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex justify-between items-center">
+                                        <span class="font-semibold text-slate-700 text-sm">Recent Invoices</span>
+                                        <button
+                                            class="bg-blue-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-blue-700 transition-colors">Generate
+                                            Invoice</button>
+                                    </div>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm text-left">
+                                            <thead class="text-xs text-slate-500 bg-slate-50 border-b border-slate-200">
+                                                <tr>
+                                                    <th class="px-4 py-3">Invoice #</th>
+                                                    <th class="px-4 py-3">Client</th>
+                                                    <th class="px-4 py-3">Amount</th>
+                                                    <th class="px-4 py-3">Status</th>
+                                                    <th class="px-4 py-3">Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-slate-100">
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-mono text-xs text-slate-500">INV-4092</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Zellar Sanitation
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$1,250.00</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold uppercase tracking-wider">Paid</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Apr 14</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-mono text-xs text-slate-500">INV-4091</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Absarokee Fire Dept
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$350.00</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-[10px] font-bold uppercase tracking-wider">Pending</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Apr 12</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-mono text-xs text-slate-500">INV-4090</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Choix Pointe
+                                                        Lighthouse</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$450.00</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-rose-100 text-rose-700 rounded text-[10px] font-bold uppercase tracking-wider">Overdue</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Mar 28</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td class="px-4 py-3 font-mono text-xs text-slate-500">INV-4089</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-800">Yooper Fitness</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">$250.00</td>
+                                                    <td class="px-4 py-3"><span
+                                                            class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold uppercase tracking-wider">Paid</span>
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Mar 25</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Products Mockup (Hidden by default) -->
+                                <div id="content-products"
+                                    class="hidden flex-col h-[85%] border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden transition-opacity duration-300">
+                                    <div
+                                        class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex justify-between items-center">
+                                        <span class="font-semibold text-slate-700 text-sm">Hardware Inventory</span>
+                                        <button
+                                            class="bg-blue-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-blue-700 transition-colors">Receive
+                                            PO</button>
+                                    </div>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm text-left">
+                                            <thead class="text-xs text-slate-500 bg-slate-50 border-b border-slate-200">
+                                                <tr>
+                                                    <th class="px-4 py-3">Product Name</th>
+                                                    <th class="px-4 py-3">Category</th>
+                                                    <th class="px-4 py-3">Stock</th>
+                                                    <th class="px-4 py-3">Unit Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-slate-100">
+                                                <tr class="hover:bg-slate-50">
+                                                    <td
+                                                        class="px-4 py-3 font-medium text-slate-800 flex items-center gap-2">
+                                                        <svg class="w-4 h-4 text-slate-400" fill="none"
+                                                            stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2"
+                                                                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4">
+                                                            </path>
+                                                        </svg> Insight 16-Channel NVR
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Security</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">2</td>
+                                                    <td class="px-4 py-3 text-slate-500">$850.00</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td
+                                                        class="px-4 py-3 font-medium text-slate-800 flex items-center gap-2">
+                                                        <svg class="w-4 h-4 text-slate-400" fill="none"
+                                                            stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2"
+                                                                d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.906 14.142 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                                            </path>
+                                                        </svg> Cisco Meraki Access Point
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Network</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">5</td>
+                                                    <td class="px-4 py-3 text-slate-500">$450.00</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td
+                                                        class="px-4 py-3 font-medium text-slate-800 flex items-center gap-2">
+                                                        <svg class="w-4 h-4 text-slate-400" fill="none"
+                                                            stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2"
+                                                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                                            </path>
+                                                        </svg> Ubiquiti G4 Pro Camera
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Security</td>
+                                                    <td class="px-4 py-3 font-medium text-slate-700">12</td>
+                                                    <td class="px-4 py-3 text-slate-500">$449.00</td>
+                                                </tr>
+                                                <tr class="hover:bg-slate-50">
+                                                    <td
+                                                        class="px-4 py-3 font-medium text-slate-800 flex items-center gap-2">
+                                                        <svg class="w-4 h-4 text-slate-400" fill="none"
+                                                            stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2"
+                                                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                                            </path>
+                                                        </svg> Quickbooks Pro License
+                                                    </td>
+                                                    <td class="px-4 py-3 text-slate-500">Software</td>
+                                                    <td class="px-4 py-3 font-medium text-amber-600">0</td>
+                                                    <td class="px-4 py-3 text-slate-500">$350.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background decorative blob -->
+            <div
+                class="absolute top-0 inset-x-0 h-[50rem] bg-gradient-to-b from-blue-50 to-slate-50 -z-10 pointer-events-none">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-24 bg-white border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Everything an MSP needs, nothing it doesn't.</h2>
+                    <p class="text-lg text-slate-600">Built from the ground up for IT operations, Business Connect
+                        replaces three separate software subscriptions with one streamlined, remote-hosted platform.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Feature 1 -->
+                    <div
+                        class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-lg transition-all group">
+                        <div
+                            class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Unified Dispatch Calendar</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Visually schedule tickets, track time entries, and manage your team's workload effortlessly.
+                            Know exactly where your technicians are and what they are working on.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div
+                        class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-200 hover:shadow-lg transition-all group">
+                        <div
+                            class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Time & Billing Hub</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Convert technician time entries directly into professional invoices with zero friction.
+                            Manage quotes, track recurring agreements, and get paid faster.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div
+                        class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:shadow-lg transition-all group">
+                        <div
+                            class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">End-to-End Procurement</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Track hardware and assets from the initial Purchase Order to the Received Asset queue. Never
+                            lose track of a vendor order or misplace client hardware again.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Simple, transparent pricing.</h2>
+                    <p class="text-slate-400 text-lg">Delivered as a 100% cloud-hosted SaaS. No complex tiers, just full
+                        access to run your business.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Standard Access Tier -->
+                    <div
+                        class="bg-slate-800 rounded-3xl border border-slate-700 overflow-hidden shadow-2xl flex flex-col">
+                        <div class="p-8 border-b border-slate-700 text-center">
+                            <h3 class="text-2xl font-bold mb-2">Standard Access</h3>
+                            <div class="flex items-end justify-center gap-1 mb-4">
+                                <span class="text-5xl font-extrabold">$149.00</span>
+                                <span class="text-slate-400 mb-1">USD / mo</span>
+                            </div>
+                            <p class="text-slate-400 text-sm">Billed monthly. Cancel anytime.</p>
+                        </div>
+                        <div class="p-8 bg-slate-800/50 flex-1 flex flex-col">
+                            <ul class="space-y-4 mb-8 flex-1">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-slate-300">Full Business Core, Ticketing & Dispatch</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-slate-300">Invoicing & Complete Procurement Suite</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-slate-300">Included Desktop Client / Companion App</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                    <span class="text-white font-semibold">24/7 AI-Powered Support</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span class="text-slate-400">Limited Human Support (9am-5pm CT)</span>
+                                </li>
+                            </ul>
+                            <a href="#contact"
+                                class="block w-full bg-slate-700 hover:bg-slate-600 text-white text-center px-6 py-4 rounded-xl font-bold transition-all">
+                                Get Standard
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Full Access Tier -->
+                    <div
+                        class="bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl border border-blue-500 overflow-hidden shadow-2xl shadow-blue-900/50 flex flex-col relative transform md:-translate-y-4">
+                        <div
+                            class="absolute top-0 inset-x-0 bg-blue-600 text-white text-xs font-bold uppercase tracking-widest py-1.5 text-center">
+                            Most Popular
+                        </div>
+                        <div class="p-8 border-b border-slate-700/50 text-center mt-4">
+                            <h3 class="text-2xl font-bold mb-2 text-white">Full Access</h3>
+                            <div class="flex items-end justify-center gap-1 mb-4">
+                                <span class="text-5xl font-extrabold text-white">$299.00</span>
+                                <span class="text-blue-200 mb-1">USD / mo</span>
+                            </div>
+                            <p class="text-blue-200 text-sm">Billed monthly. Cancel anytime.</p>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <ul class="space-y-4 mb-8 flex-1">
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="text-slate-200">Everything in Standard Access</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-white font-bold">Priority Human Support (9am-5pm CT)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-white font-bold">Advanced AI Diagnostics Agent</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    <span class="text-slate-200">Dedicated Account Manager</span>
+                                </li>
+                            </ul>
+                            <a href="#contact"
+                                class="block w-full bg-blue-600 hover:bg-blue-500 text-white text-center px-6 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-500/30">
+                                Get Full Access
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- TERMS OF SERVICE VIEW (Hidden initially) -->
+    <div id="view-tos" class="hidden min-h-screen bg-white py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 border-b border-slate-200 pb-8">
+                <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Software as a Service (SaaS) Agreement</h1>
+                <p class="text-slate-500">Effective Date: April 2026</p>
+            </div>
+
+            <div class="prose prose-slate max-w-none text-slate-700 space-y-8">
+                <p>Welcome to Business Connect, a cloud-hosted Professional Services Automation (PSA) platform provided
+                    by Sutton Tech LLC ("Sutton Tech," "we," "us," or "our"). By subscribing to, accessing, or using the
+                    Business Connect platform, you agree to be bound by the terms of this Software as a Service
+                    Agreement ("Agreement").</p>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Scope of Access and License</h2>
+                    <p class="mb-3">Sutton Tech grants you a temporary, non-exclusive, non-transferable, and revocable
+                        right to access and use the Business Connect cloud platform strictly for your internal business
+                        operations. </p>
+                    <p><strong>No Software Transfer:</strong> You acknowledge that Business Connect is delivered solely
+                        as a hosted service. This Agreement does not grant you any license to underlying software code,
+                        object code, or source code. Sutton Tech retains full, exclusive ownership of all software,
+                        architecture, intellectual property, and infrastructure used to provide the service. Any
+                        downloadable companion applications provided are incidental to the primary hosted service and
+                        remain the property of Sutton Tech.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Service Level Agreement (SLA) & Support</h2>
+                    <p class="mb-3">Sutton Tech provides support for the Business Connect platform based on your
+                        subscription tier:</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-3">
+                        <li><strong>Standard Access:</strong> Standard human support is available during regular
+                            business hours: <strong>9:00 AM to 5:00 PM Central Time (CT)</strong>, Monday through
+                            Friday, excluding public holidays. Standard SLA response time is 48 hours.</li>
+                        <li><strong>Full Access:</strong> Priority human support is available 9:00 AM to 5:00 PM CT with
+                            expedited response times.</li>
+                    </ul>
+                    <p>All tiers include access to our automated, 24/7 AI-Powered Support and Diagnostic Agent for
+                        immediate troubleshooting.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">3. Data Ownership</h2>
+                    <p>Sutton Tech claims no ownership over the data you input into the platform (including but not
+                        limited to client lists, ticketing information, financial data, and hardware inventory). You
+                        retain full ownership and responsibility for your data. By using the platform, you grant Sutton
+                        Tech the necessary permissions to host, process, and back up this data solely for the purpose of
+                        providing the Business Connect service to you.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">4. Limitation of Liability</h2>
+                    <p class="mb-3">To the maximum extent permitted by applicable law, Sutton Tech LLC, its affiliates,
+                        employees, and agents shall not be liable for any indirect, incidental, special, consequential,
+                        or punitive damages, including without limitation, loss of profits, data, use, goodwill, or
+                        other intangible losses, resulting from:</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-3">
+                        <li>Your access to or use of or inability to access or use the platform.</li>
+                        <li>Any service interruptions, server crashes, downtime, or network failures (including
+                            third-party infrastructure such as Tailscale).</li>
+                        <li>Any unauthorized access, use, or alteration of your transmissions or content.</li>
+                    </ul>
+                    <p>In no event shall Sutton Tech LLC's aggregate liability for all claims related to the service
+                        exceed the total amount paid by you to Sutton Tech for the specific service in the twelve (12)
+                        months immediately preceding the event giving rise to the liability.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <button onclick="showHome()"
+                    class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-6 py-3 rounded-lg font-medium transition-colors">
+                    &larr; Return to Business Connect
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 py-12 border-t border-slate-200 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center gap-2 mb-4">
+                <div class="w-6 h-6 bg-slate-300 rounded flex items-center justify-center">
+                    <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                        </path>
+                    </svg>
+                </div>
+                <span class="font-bold text-slate-800">Sutton Tech LLC</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-4">
+                &copy; 2026 Sutton Tech LLC. All rights reserved. <br>
+                Business Connect is a fully hosted Professional Services Automation platform.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" onclick="showTos(event)"
+                    class="text-xs text-blue-600 hover:text-blue-800 hover:underline">Terms of Service (SaaS
+                    Agreement)</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
