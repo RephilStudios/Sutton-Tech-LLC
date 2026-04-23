@@ -1,3 +1,15 @@
+/* =========================================================================
+   GLOBAL SITE TOGGLES
+   ========================================================================= */
+
+/* 
+ * MAINTENANCE BANNER TOGGLE 
+ * To HIDE the banner across all 3 pages, simply uncomment the line below.
+ */
+#global-maintenance-banner {
+    /* display: none !important; */
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
