@@ -16,9 +16,3 @@ body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
-
-.gradient-text {
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}

@@ -11,17 +11,13 @@
 
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200">
 
-    <!-- Coming Soon Banner -->
+    <!-- Early Access Banner -->
     <div id="global-maintenance-banner"
-        class="bg-gradient-to-r from-amber-400 to-amber-500 text-amber-900 border-b border-amber-600 shadow-sm relative z-[100]">
+        class="bg-slate-100 text-slate-700 border-b border-slate-200 shadow-sm relative z-[100]">
         <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-center flex-wrap gap-3">
-                <svg class="h-6 w-6 text-amber-900/80" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
-                <p class="font-bold tracking-wide text-sm sm:text-base">
-                    SITE UNDER CONSTRUCTION. PRODUCTS AND CAPABILITIES ARE NOT YET PUBLICLY AVAILABLE.
+                <p class="font-medium tracking-wide text-sm sm:text-base">
+                    Please note: Select products are currently in early access or under development.
                 </p>
             </div>
         </div>
@@ -38,23 +34,21 @@
                             class="w-full h-full object-contain mix-blend-multiply" />
                     </div>
                     <span
-                        class="font-bold text-xl tracking-tight text-slate-800 hover:text-blue-600 transition-colors">Business
+                        class="font-bold text-xl tracking-tight text-slate-800 hover:text-blue-700 transition-colors">Business
                         Connect</span>
                 </div>
                 <div class="hidden md:flex space-x-8" id="nav-links">
-                    <a href="index.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Sutton
-                        Tech</a>
-                    <a href="#features" class="text-slate-600 hover:text-blue-600 font-medium transition-colors"
-                        onclick="showHome()">Features</a>
-                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 font-medium transition-colors"
-                        onclick="showHome()">Pricing</a>
+                    <a href="index.html"
+                        class="text-slate-600 hover:text-blue-700 font-medium transition-colors">Home</a>
+                    <a href="business-connect.html" class="text-blue-700 font-bold transition-colors">Business
+                        Connect</a>
                     <a href="dgx-spark.html"
-                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">DGX Spark</a>
+                        class="text-slate-600 hover:text-blue-700 font-medium transition-colors">DGX Spark</a>
                 </div>
                 <div>
-                    <a href="#contact"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm shadow-blue-200">
-                        Request Access
+                    <a href="mailto:contact@suttontech.com"
+                        class="bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm">
+                        Contact Us
                     </a>
                 </div>
             </div>
@@ -64,33 +58,28 @@
     <!-- MAIN LANDING PAGE VIEW -->
     <div id="view-home" class="block">
         <!-- Hero Section -->
-        <section class="relative pt-20 pb-32 overflow-hidden">
+        <section class="relative pt-20 pb-32 overflow-hidden bg-slate-50 border-b border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-4xl mx-auto">
                     <div
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-6 border border-blue-100">
-                        <span class="relative flex h-2 w-2">
-                            <span
-                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-                        </span>
-                        100% Cloud-Hosted SaaS
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-slate-700 text-sm font-medium mb-6 border border-slate-200">
+                        Cloud-Based Management
                     </div>
-                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight">
-                        The Complete PSA Built for <br class="hidden md:block" />
-                        <span class="bg-gradient-to-r from-blue-600 to-indigo-600 gradient-text">Modern MSPs</span>
+                    <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-slate-900 leading-tight">
+                        Practical Business <br class="hidden md:block" />
+                        <span class="text-blue-700">Management Software</span>
                     </h1>
                     <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Stop fighting with fragmented tools. Business Connect unifies your dispatch calendar, ticketing,
-                        billing, and procurement into one seamless, zero-maintenance platform.
+                        Simplify your daily operations. Business Connect brings your scheduling, customer support,
+                        invoicing, and inventory tracking into one secure, easy-to-use application.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <a href="#pricing"
-                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-blue-200 text-lg">
+                            class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-medium transition-all shadow-sm text-lg">
                             View Pricing
                         </a>
                         <a href="#features"
-                            class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold transition-all shadow-sm text-lg">
+                            class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-medium transition-all shadow-sm text-lg">
                             Explore Features
                         </a>
                     </div>
@@ -542,8 +531,7 @@
             </div>
 
             <!-- Background decorative blob -->
-            <div
-                class="absolute top-0 inset-x-0 h-[50rem] bg-gradient-to-b from-blue-50 to-slate-50 -z-10 pointer-events-none">
+            <div class="absolute top-0 inset-x-0 h-[30rem] bg-slate-100 -z-10 pointer-events-none">
             </div>
         </section>
 
@@ -551,9 +539,9 @@
         <section id="features" class="py-24 bg-white border-t border-slate-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Everything an MSP needs, nothing it doesn't.</h2>
-                    <p class="text-lg text-slate-600">Built from the ground up for IT operations, Business Connect
-                        replaces three separate software subscriptions with one streamlined, remote-hosted platform.</p>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Everything you need, nothing you don't.</h2>
+                    <p class="text-lg text-slate-600">Designed with practicality in mind, Business Connect consolidates
+                        multiple tools into a single, cohesive platform.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -614,74 +602,62 @@
         </section>
 
         <!-- Pricing Section -->
-        <section id="pricing" class="py-24 bg-slate-900 text-white relative overflow-hidden">
-            <div
-                class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent">
-            </div>
+        <section id="pricing" class="py-24 bg-slate-50 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold mb-4">Simple, transparent pricing.</h2>
-                    <p class="text-slate-400 text-lg">Delivered as a 100% cloud-hosted SaaS. No complex tiers, just full
-                        access to run your business.</p>
+                    <h2 class="text-3xl font-bold mb-4 text-slate-900">Simple, transparent pricing.</h2>
+                    <p class="text-slate-600 text-lg">Delivered securely from the cloud. No complex tiers, just
+                        straightforward access to the tools you need.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     <!-- Standard Access Tier -->
-                    <div
-                        class="bg-slate-800 rounded-3xl border border-slate-700 overflow-hidden shadow-2xl flex flex-col">
-                        <div class="p-8 border-b border-slate-700 text-center">
-                            <h3 class="text-2xl font-bold mb-2">Standard Access</h3>
+                    <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm flex flex-col">
+                        <div class="p-8 border-b border-slate-100 text-center">
+                            <h3 class="text-2xl font-bold mb-2 text-slate-900">Standard Access</h3>
                             <div class="flex items-end justify-center gap-1 mb-4">
-                                <span class="text-5xl font-extrabold">$149.00</span>
-                                <span class="text-slate-400 mb-1">USD / mo</span>
+                                <span class="text-5xl font-bold text-slate-900">$149.00</span>
+                                <span class="text-slate-500 mb-1">USD / mo</span>
                             </div>
-                            <p class="text-slate-400 text-sm">Billed monthly. Cancel anytime.</p>
+                            <p class="text-slate-500 text-sm">Billed monthly. Cancel anytime.</p>
                         </div>
-                        <div class="p-8 bg-slate-800/50 flex-1 flex flex-col">
+                        <div class="p-8 bg-slate-50 flex-1 flex flex-col">
                             <ul class="space-y-4 mb-8 flex-1">
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span class="text-slate-300">Full Business Core, Ticketing & Dispatch</span>
+                                    <span class="text-slate-700">Full Business Core, Ticketing & Dispatch</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span class="text-slate-300">Invoicing & Complete Procurement Suite</span>
+                                    <span class="text-slate-700">Invoicing & Complete Procurement Suite</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span class="text-slate-300">Included Desktop Client / Companion App</span>
+                                    <span class="text-slate-700">Included Desktop Client / Companion App</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                     </svg>
-                                    <span class="text-white font-semibold">24/7 AI-Powered Support</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-slate-500 flex-shrink-0 mt-0.5" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                    <span class="text-slate-400">Limited Human Support (9am-5pm CT)</span>
+                                    <span class="text-slate-900 font-medium">Standard Support Queue</span>
                                 </li>
                             </ul>
                             <a href="#contact"
-                                class="block w-full bg-slate-700 hover:bg-slate-600 text-white text-center px-6 py-4 rounded-xl font-bold transition-all">
+                                class="block w-full bg-slate-200 hover:bg-slate-300 text-slate-800 text-center px-6 py-4 rounded-xl font-medium transition-all">
                                 Get Standard
                             </a>
                         </div>
@@ -689,59 +665,59 @@
 
                     <!-- Full Access Tier -->
                     <div
-                        class="bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl border border-blue-500 overflow-hidden shadow-2xl shadow-blue-900/50 flex flex-col relative transform md:-translate-y-4">
+                        class="bg-white rounded-3xl border border-blue-200 overflow-hidden shadow-md flex flex-col relative transform md:-translate-y-4">
                         <div
-                            class="absolute top-0 inset-x-0 bg-blue-600 text-white text-xs font-bold uppercase tracking-widest py-1.5 text-center">
+                            class="absolute top-0 inset-x-0 bg-blue-700 text-white text-xs font-bold uppercase tracking-widest py-1.5 text-center">
                             Most Popular
                         </div>
-                        <div class="p-8 border-b border-slate-700/50 text-center mt-4">
-                            <h3 class="text-2xl font-bold mb-2 text-white">Full Access</h3>
+                        <div class="p-8 border-b border-slate-100 text-center mt-4">
+                            <h3 class="text-2xl font-bold mb-2 text-slate-900">Full Access</h3>
                             <div class="flex items-end justify-center gap-1 mb-4">
-                                <span class="text-5xl font-extrabold text-white">$299.00</span>
-                                <span class="text-blue-200 mb-1">USD / mo</span>
+                                <span class="text-5xl font-bold text-slate-900">$299.00</span>
+                                <span class="text-slate-500 mb-1">USD / mo</span>
                             </div>
-                            <p class="text-blue-200 text-sm">Billed monthly. Cancel anytime.</p>
+                            <p class="text-slate-500 text-sm">Billed monthly. Cancel anytime.</p>
                         </div>
-                        <div class="p-8 flex-1 flex flex-col">
+                        <div class="p-8 bg-blue-50/50 flex-1 flex flex-col">
                             <ul class="space-y-4 mb-8 flex-1">
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M5 13l4 4L19 7"></path>
                                     </svg>
-                                    <span class="text-slate-200">Everything in Standard Access</span>
+                                    <span class="text-slate-700">Everything in Standard Access</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                                         </path>
                                     </svg>
-                                    <span class="text-white font-bold">Priority Human Support (9am-5pm CT)</span>
+                                    <span class="text-slate-900 font-medium">Priority Human Support (9am-5pm CT)</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
                                         </path>
                                     </svg>
-                                    <span class="text-white font-bold">Advanced AI Diagnostics Agent</span>
+                                    <span class="text-slate-900 font-medium">Advanced Diagnostics Tools</span>
                                 </li>
                                 <li class="flex items-start gap-3">
-                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none"
+                                    <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
                                         </path>
                                     </svg>
-                                    <span class="text-slate-200">Dedicated Account Manager</span>
+                                    <span class="text-slate-700">Dedicated Account Manager</span>
                                 </li>
                             </ul>
                             <a href="#contact"
-                                class="block w-full bg-blue-600 hover:bg-blue-500 text-white text-center px-6 py-4 rounded-xl font-bold transition-all shadow-lg shadow-blue-500/30">
+                                class="block w-full bg-blue-700 hover:bg-blue-800 text-white text-center px-6 py-4 rounded-xl font-medium transition-all shadow-sm">
                                 Get Full Access
                             </a>
                         </div>

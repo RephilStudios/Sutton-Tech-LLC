@@ -11,17 +11,13 @@
 
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200">
 
-    <!-- Coming Soon Banner -->
+    <!-- Early Access Banner -->
     <div id="global-maintenance-banner"
-        class="bg-gradient-to-r from-amber-400 to-amber-500 text-amber-900 border-b border-amber-600 shadow-sm relative z-[100]">
+        class="bg-slate-100 text-slate-700 border-b border-slate-200 shadow-sm relative z-[100]">
         <div class="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-center flex-wrap gap-3">
-                <svg class="h-6 w-6 text-amber-900/80" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
-                <p class="font-bold tracking-wide text-sm sm:text-base">
-                    SITE UNDER CONSTRUCTION. PRODUCTS AND CAPABILITIES ARE NOT YET PUBLICLY AVAILABLE.
+                <p class="font-medium tracking-wide text-sm sm:text-base">
+                    Please note: Select products are currently in early access or under development.
                 </p>
             </div>
         </div>
@@ -39,20 +35,20 @@
                             class="w-full h-full object-contain mix-blend-multiply" />
                     </div>
                     <span
-                        class="font-bold text-xl tracking-tight text-slate-800 hover:text-blue-600 transition-colors">DGX
+                        class="font-bold text-xl tracking-tight text-slate-800 hover:text-blue-700 transition-colors">DGX
                         Spark</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Sutton
-                        Tech</a>
+                <div class="hidden md:flex space-x-8" id="nav-links">
+                    <a href="index.html"
+                        class="text-slate-600 hover:text-blue-700 font-medium transition-colors">Home</a>
                     <a href="business-connect.html"
-                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Business Connect</a>
-                    <span class="text-blue-600 font-bold transition-colors">DGX Spark Compute</span>
+                        class="text-slate-600 hover:text-blue-700 font-medium transition-colors">Business Connect</a>
+                    <a href="dgx-spark.html" class="text-blue-700 font-bold transition-colors">DGX Spark</a>
                 </div>
                 <div>
-                    <a href="#purchase"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm shadow-blue-200">
-                        Get Compute
+                    <a href="mailto:contact@suttontech.com"
+                        class="bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm">
+                        Contact Us
                     </a>
                 </div>
             </div>
@@ -65,25 +61,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
                 <div
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-6 border border-blue-100">
-                    <span class="relative flex h-2 w-2">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-                    </span>
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm font-medium mb-6 border border-slate-200">
                     Now Available
                 </div>
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-slate-900 leading-tight">
-                    Enterprise AI Compute.<br />
-                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 gradient-text">On-Demand.</span>
+                <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-slate-900 leading-tight">
+                    High-Performance Computing.<br />
+                    <span class="text-blue-700">On-Demand.</span>
                 </h1>
                 <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Accelerate your deep learning pipelines with direct access to DGX Spark. Premium GPU compute
+                    Access reliable GPU resources for your processing needs. Premium compute
                     available by the week. Please contact us to check current availability.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="#purchase"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg shadow-blue-200 text-lg flex items-center justify-center gap-2">
+                        class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-medium transition-all shadow-sm text-lg flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
@@ -109,11 +100,11 @@
                             <div class="text-2xl font-bold text-slate-800 mb-1">JupyterLab / SSH</div>
                         </div>
                         <div
-                            class="bg-white border border-blue-200 rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-md ring-1 ring-blue-100">
-                            <h3 class="text-blue-600 font-mono text-sm mb-2 uppercase tracking-wide font-semibold">
+                            class="bg-slate-50 border border-slate-300 rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-sm">
+                            <h3 class="text-blue-700 font-mono text-sm mb-2 uppercase tracking-wide font-semibold">
                                 Compute Unit</h3>
-                            <div class="text-3xl font-extrabold text-slate-900 mb-1">DGX <span
-                                    class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Spark</span>
+                            <div class="text-3xl font-bold text-slate-900 mb-1">DGX <span
+                                    class="text-blue-700">Spark</span>
                             </div>
                             <div class="text-slate-500 text-sm font-medium">Dedicated Container</div>
                         </div>
